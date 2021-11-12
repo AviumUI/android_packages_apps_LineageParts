@@ -15,7 +15,6 @@ import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.lineageparts.contributors.ContributorsCloudFragment;
 import org.lineageos.lineageparts.gestures.TouchscreenGestureSettings;
 import org.lineageos.lineageparts.input.ButtonSettings;
 import org.lineageos.lineageparts.livedisplay.LiveDisplaySettings;
@@ -27,9 +26,6 @@ public class BootReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context ctx, Intent intent) {
-        // Extract the contributors database
-        ContributorsCloudFragment.extractContributorsCloudDatabase(ctx);
-
         // Toggle visibility of some settings regardless of user type
         LiveDisplaySettings.restoreLiveDisplay(ctx);
         TouchscreenGestureSettings.restoreTouchscreenGestures(ctx);
