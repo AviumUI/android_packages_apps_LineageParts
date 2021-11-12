@@ -325,28 +325,6 @@
                 android:resource="@string/summary_empty" />
         </activity-alias>
 
-        <!-- Anonymous Statistics -->
-        <receiver
-            android:name=".lineagestats.ReportingServiceManager"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingServiceManager">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="org.lineageos.lineageparts.action.TRIGGER_REPORT_METRICS" />
-            </intent-filter>
-        </receiver>
-
-        <service
-            android:name=".lineagestats.ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingService" />
-
-        <service
-            android:name=".lineagestats.StatsUploadJobService"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
-
         <activity
             android:name=".profiles.NFCProfile"
             android:exported="true">
