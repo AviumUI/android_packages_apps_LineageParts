@@ -20,11 +20,11 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.preference.Preference;
-import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.MainSwitchBar;
+import com.android.settingslib.widget.SettingsBasePreferenceFragment;
 
 import lineageos.preference.PartInfo;
 import lineageos.preference.PartsList;
@@ -32,8 +32,8 @@ import lineageos.preference.PartsList;
 import org.lineageos.lineageparts.profiles.NFCProfileTagCallback;
 
 public class PartsActivity extends CollapsingToolbarBaseActivity implements
-        PreferenceFragmentCompat.OnPreferenceStartFragmentCallback,
-        PreferenceFragmentCompat.OnPreferenceStartScreenCallback {
+        SettingsBasePreferenceFragment.OnPreferenceStartFragmentCallback,
+        SettingsBasePreferenceFragment.OnPreferenceStartScreenCallback {
 
     private static final String TAG = "PartsActivity";
 
@@ -118,14 +118,14 @@ public class PartsActivity extends CollapsingToolbarBaseActivity implements
     }
 
     @Override
-    public boolean onPreferenceStartFragment(PreferenceFragmentCompat caller, Preference pref) {
+    public boolean onPreferenceStartFragment(SettingsBasePreferenceFragment caller, Preference pref) {
         startPreferencePanel(pref.getFragment(), pref.getExtras(), -1, pref.getTitle(),
                 null, 0);
         return true;
     }
 
     @Override
-    public boolean onPreferenceStartScreen(PreferenceFragmentCompat caller, PreferenceScreen pref) {
+    public boolean onPreferenceStartScreen(SettingsBasePreferenceFragment caller, PreferenceScreen pref) {
         startPreferencePanel(pref.getFragment(), pref.getExtras(), -1, pref.getTitle(),
                 null, 0);
         return true;
