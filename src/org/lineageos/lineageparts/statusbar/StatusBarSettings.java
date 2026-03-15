@@ -1,9 +1,11 @@
 /*
  * SPDX-FileCopyrightText: 2014-2015 The CyanogenMod Project
- * SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 package org.lineageos.lineageparts.statusbar;
+
+import static org.lineageos.lineageparts.utils.ResourceUtils.isRtlMode;
 
 import android.content.Intent;
 import android.os.BatteryManager;
@@ -11,7 +13,6 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
-import android.view.View;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -64,7 +65,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         mStatusBarAmPm = findPreference(STATUS_BAR_AM_PM);
         mStatusBarClock = findPreference(STATUS_BAR_CLOCK_STYLE);
-        mStatusBarClock.setOnPreferenceChangeListener(this);
 
         mStatusBarClockCategory = getPreferenceScreen().findPreference(CATEGORY_CLOCK);
 
@@ -107,14 +107,15 @@ public class StatusBarSettings extends SettingsPreferenceFragment
 
         if (DateFormat.is24HourFormat(getActivity())) {
             mStatusBarAmPm.setEnabled(false);
-            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_info);
+            mStatusBarAmPm.setSummaryProvider(preference -> preference.getContext()
+                    .getString(R.string.status_bar_am_pm_info));
         }
 
         final boolean disallowCenteredClock = DeviceUtils.hasCenteredCutout(getActivity())
                     || getNetworkTrafficStatus() != 0;
 
         // Adjust status bar preferences for RTL
-        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+        if (isRtlMode(getResources())) {
             if (disallowCenteredClock) {
                 mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
@@ -143,8 +144,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment
             case STATUS_BAR_QUICK_QS_PULLDOWN:
                 updateQuickPulldownSummary(value);
                 break;
-            case STATUS_BAR_CLOCK_STYLE:
-                break;
             case STATUS_BAR_BATTERY_STYLE:
                 enableStatusBarBatteryDependents(value);
                 break;
@@ -169,9 +168,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
                 summary = getResources().getString(
                     R.string.status_bar_quick_qs_pulldown_summary,
                     getResources().getString(
-                        (value == PULLDOWN_DIR_LEFT) ^
-                        (getResources().getConfiguration().getLayoutDirection()
-                            == View.LAYOUT_DIRECTION_RTL)
+                        (value == PULLDOWN_DIR_LEFT) ^ isRtlMode(getResources())
                         ? R.string.status_bar_quick_qs_pulldown_summary_left
                         : R.string.status_bar_quick_qs_pulldown_summary_right));
                 break;

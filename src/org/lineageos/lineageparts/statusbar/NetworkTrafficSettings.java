@@ -1,13 +1,14 @@
 /*
- * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
 package org.lineageos.lineageparts.statusbar;
 
+import static org.lineageos.lineageparts.utils.ResourceUtils.isRtlMode;
+
 import android.content.ContentResolver;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -42,6 +43,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private ListPreference mNetTrafficMode;
     private ListPreference mNetTrafficPosition;
     private LineageSecureSettingSwitchPreference mNetTrafficAutohide;
+    private LineageSecureSettingSwitchPreference mNetTrafficHideArrows;
     private ListPreference mNetTrafficUnits;
     private ListPreference mNetTrafficShowUnits;
 
@@ -66,7 +68,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         mNetTrafficPosition.setOnPreferenceChangeListener(this);
 
         // Adjust network traffic preferences for RTL
-        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+        if (isRtlMode(getResources())) {
             if (disallowCenteredTraffic) {
                 mNetTrafficPosition.setEntries(R.array.network_traffic_position_entries_notch_rtl);
                 mNetTrafficPosition.setEntryValues(R.array.network_traffic_position_values_notch);
@@ -96,6 +98,9 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
         mNetTrafficAutohide = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
+
+        mNetTrafficHideArrows = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_HIDE_ARROWS);
+        mNetTrafficHideArrows.setOnPreferenceChangeListener(this);
 
         mNetTrafficUnits = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_UNITS);
         mNetTrafficUnits.setOnPreferenceChangeListener(this);
@@ -171,6 +176,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         final boolean enabled = mode != 0;
         mNetTrafficPosition.setEnabled(enabled);
         mNetTrafficAutohide.setEnabled(enabled);
+        mNetTrafficHideArrows.setEnabled(enabled);
         mNetTrafficUnits.setEnabled(enabled);
         mNetTrafficShowUnits.setEnabled(enabled);
     }
