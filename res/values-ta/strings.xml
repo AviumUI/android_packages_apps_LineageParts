@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -63,6 +63,7 @@
     <string name="charging_control_target_time_title">முழுமையாக மின்னேற இலக்கு நேரம்</string>
     <string name="charging_control_target_time_summary">%s மணிக்குள் மின்கலம் முழுமையாக மின்னூட்டப்படும்</string>
     <string name="charging_control_limit_title">வரம்பு</string>
+    <string name="charging_control_limit_summary">தற்போதைய வரம்பு: %d%%</string>
     <string name="battery_light_title">மின்கலவொளி</string>
     <string name="battery_light_enable_title">மின்கலவொளியை இயக்குக</string>
     <string name="battery_low_pulse_title">மின்கலம் குறைவாக இருந்தால் துடிக்க</string>
@@ -275,6 +276,7 @@
     <string name="status_bar_am_pm_normal">இயல்பு</string>
     <string name="status_bar_battery_title">மின்கலங்காட்டி</string>
     <string name="status_bar_battery_style_title">மின்கல நிலைப்பாணி</string>
+    <string name="status_bar_battery_style_icon_landscape">படவுரு கிடைமட்டம்</string>
     <string name="status_bar_battery_style_circle">வட்டம்</string>
     <string name="status_bar_battery_style_dotted_circle">புள்ளி வட்டம்</string>
     <string name="status_bar_battery_style_text">உரை</string>
@@ -289,6 +291,9 @@
     <string name="status_bar_brightness_slider_show_never">ஒருபோதும் காட்டாதே</string>
     <string name="status_bar_brightness_slider_show_expanded">விரிவாக்கும்போது காட்டுக</string>
     <string name="status_bar_brightness_slider_show_always">எப்பொழுதும் காட்டுக</string>
+    <string name="status_bar_brightness_slider_position_title">ஒளிர்வு நகர்த்தி நிலை</string>
+    <string name="status_bar_brightness_slider_position_top">மேல்</string>
+    <string name="status_bar_brightness_slider_position_bottom">கீழ்</string>
     <string name="network_traffic_settings_title">பிணையப் போக்குவரத்துக் கண்காணிப்பு</string>
     <string name="network_traffic_settings_summary">தற்போதைய பிணையப் போக்குவரத்து நிலைகளை நிலைப்பட்டியில் காட்டுக</string>
     <string name="network_traffic_mode_title">காட்சியமைவு முறை</string>
@@ -298,6 +303,8 @@
     <string name="network_traffic_mode_all">பதிவேற்றமும், பதிவிறக்கமும்</string>
     <string name="network_traffic_autohide">தானாக மறைக்க</string>
     <string name="network_traffic_autohide_summary">செயற்பாடு இல்லையெனில், போக்குவரத்து கண்காணிப்பை மறைக்க</string>
+    <string name="network_traffic_hide_arrows">அம்புக்குறிகளை மறைக்க</string>
+    <string name="network_traffic_hide_arrows_summary">பதிவேற்ற, பதிவிறக்க அம்புக்குறிகளை மறைக்க</string>
     <string name="network_traffic_units_title">பிணையப் போக்குவரத்து அளவீட்டு அலகுகள்</string>
     <string name="network_traffic_units_kilobits">கிலோ பிட் ஒரு நொடிக்கு (கி.பிட்/நொ)</string>
     <string name="network_traffic_units_megabits">மெகாபிட் ஒரு நொடிக்கு (மெ.பிட்/நொ)</string>

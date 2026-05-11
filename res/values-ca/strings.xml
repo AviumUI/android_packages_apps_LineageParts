@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -399,6 +399,8 @@
     <string name="network_traffic_position_title">Posició</string>
     <string name="network_traffic_autohide">Amaga automàticament</string>
     <string name="network_traffic_autohide_summary">Amaga el monitor de trànsit quan no hi hagi activitat</string>
+    <string name="network_traffic_hide_arrows">Amaga les fletxes</string>
+    <string name="network_traffic_hide_arrows_summary">Amaga les fletxes de direcció de pujada i baixada</string>
     <string name="network_traffic_units_title">Unitats de mesura de trànsit</string>
     <string name="network_traffic_units_kilobits">Kilobits per segon (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabits per segon (Mb/s)</string>

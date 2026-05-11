@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -399,6 +399,8 @@
     <string name="network_traffic_position_title">Seasamh</string>
     <string name="network_traffic_autohide">Folaigh uathoibríoch</string>
     <string name="network_traffic_autohide_summary">Folaigh an monatóir tráchta nuair nach bhfuil aon ghníomhaíocht ann</string>
+    <string name="network_traffic_hide_arrows">Folaigh saigheada</string>
+    <string name="network_traffic_hide_arrows_summary">Folaigh saigheada treorach uaslódála agus íoslódála</string>
     <string name="network_traffic_units_title">Aonaid tomhais tráchta</string>
     <string name="network_traffic_units_kilobits">Cilibítí in aghaidh an tsoicind (kbit/s).</string>
     <string name="network_traffic_units_megabits">Meigighiotáin in aghaidh an tsoicind (Mb/s)</string>

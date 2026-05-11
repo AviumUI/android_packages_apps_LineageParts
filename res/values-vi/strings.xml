@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -399,6 +399,8 @@
     <string name="network_traffic_position_title">Vị trí</string>
     <string name="network_traffic_autohide">Tự động ẩn</string>
     <string name="network_traffic_autohide_summary">Ẩn giám sát lưu lượng mạng khi không có hoạt động</string>
+    <string name="network_traffic_hide_arrows">Ẩn mũi tên</string>
+    <string name="network_traffic_hide_arrows_summary">Ẩn các mũi tên chỉ hướng tải lên và tải xuống</string>
     <string name="network_traffic_units_title">Đơn vị đo lưu lượng</string>
     <string name="network_traffic_units_kilobits">Kilobit trên giây (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabit trên giây (Mb/s)</string>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -63,6 +63,7 @@
     <string name="charging_control_target_time_title">Synoni kohën për karikimin e plotë</string>
     <string name="charging_control_target_time_summary">Bateria do të karikohet plotësisht nga %s</string>
     <string name="charging_control_limit_title">Limiti</string>
+    <string name="charging_control_limit_summary">Limiti aktual: %d%%</string>
     <string name="battery_light_title">Drita e baterisë</string>
     <string name="battery_light_enable_title">Aktivizo dritën e baterisë</string>
     <string name="battery_low_pulse_title">Pulso nëse bateria është e ulët</string>
@@ -177,6 +178,7 @@
     <string name="power_end_call_summary">Mbyll telefonatën aktuale duke shtypur butonin e energjisë</string>
     <string name="swap_volume_buttons_title">Rioriento</string>
     <string name="swap_volume_buttons_summary">Shkëmbe butonat e volumit kur ekrani është i kthyer</string>
+    <string name="volume_panel_position_title">Pozicioni i panelit të volumit</string>
     <string name="volume_panel_position_left">Majtas</string>
     <string name="volume_panel_position_right">Djathtas</string>
     <string name="button_wake_title">Zgjo pajisjen</string>
@@ -368,7 +370,9 @@
     <string name="status_bar_am_pm_hidden">I fshehur</string>
     <string name="status_bar_battery_title">Treguesi i baterisë</string>
     <string name="status_bar_battery_style_title">Stili i treguesit të baterisë</string>
+    <string name="status_bar_battery_style_icon_landscape">Ikonë horizontalisht</string>
     <string name="status_bar_battery_style_circle">Rreth</string>
+    <string name="status_bar_battery_style_dotted_circle">Rreth me pika</string>
     <string name="status_bar_battery_style_text">Tekst</string>
     <string name="status_bar_battery_percentage_title">Përqindja e baterisë</string>
     <string name="status_bar_battery_percentage_default">E fshehur</string>
@@ -382,6 +386,9 @@
     <string name="status_bar_brightness_slider_show_never">Mos e tregoni asnjëherë</string>
     <string name="status_bar_brightness_slider_show_expanded">Trego kur zgjerohet</string>
     <string name="status_bar_brightness_slider_show_always">Trego gjithmonë</string>
+    <string name="status_bar_brightness_slider_position_title">Pozicioni i rrëshqitësit të shkëlqimit</string>
+    <string name="status_bar_brightness_slider_position_top">Sipër</string>
+    <string name="status_bar_brightness_slider_position_bottom">Poshtë</string>
     <string name="network_traffic_settings_title">Monitorues të trafikut të rrjetit</string>
     <string name="network_traffic_settings_summary">Shfaq nivelin aktual të trafikut të rrjetit në shiritin e statusit</string>
     <string name="network_traffic_mode_title">Mënyra e shfaqjes</string>
@@ -392,6 +399,8 @@
     <string name="network_traffic_position_title">Pozicioni</string>
     <string name="network_traffic_autohide">Vetëfshehje</string>
     <string name="network_traffic_autohide_summary">Fsheh monitoruesin e trafikut kur ska asnjë aktivitet</string>
+    <string name="network_traffic_hide_arrows">Fshih shigjetat</string>
+    <string name="network_traffic_hide_arrows_summary">Fshih shigjetat e drejtimit të ngarkimit dhe shkarkimit</string>
     <string name="network_traffic_units_title">Njësitë matëse të trafikut</string>
     <string name="network_traffic_units_kilobits">Kilobit për sekondë (kb/s)</string>
     <string name="network_traffic_units_megabits">Megabite për sekondë (Mb/s)</string>

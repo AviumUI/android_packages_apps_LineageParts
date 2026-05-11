@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -399,6 +399,8 @@
     <string name="network_traffic_position_title">ئورنى</string>
     <string name="network_traffic_autohide">ئۆزلۈكىدىن يوشۇر</string>
     <string name="network_traffic_autohide_summary">ھېچقانداق پائالىيەت بولمىغاندا ئېقىم كۆزەتكۈچنى يوشۇرىدۇ</string>
+    <string name="network_traffic_hide_arrows">يا ئوقنى يوشۇر</string>
+    <string name="network_traffic_hide_arrows_summary">يۈكلەش ۋە چۈشۈرۈش يۆنىلىش يا ئوقىنى يوشۇرىدۇ</string>
     <string name="network_traffic_units_title">ئېقىم ئۆلچەم بىرلىكى</string>
     <string name="network_traffic_units_kilobits">سېكۇنتىغا كىلوبىت (kb/s)</string>
     <string name="network_traffic_units_megabits">سېكۇنتىغا مېگابىت (Mb/s)</string>

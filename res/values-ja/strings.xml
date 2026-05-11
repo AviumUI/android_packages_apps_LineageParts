@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -399,6 +399,8 @@
     <string name="network_traffic_position_title">位置</string>
     <string name="network_traffic_autohide">自動的に隠す</string>
     <string name="network_traffic_autohide_summary">非アクティブ時にトラフィックモニターを非表示にします</string>
+    <string name="network_traffic_hide_arrows">矢印を隠す</string>
+    <string name="network_traffic_hide_arrows_summary">アップロードとダウンロード方向の矢印を隠します</string>
     <string name="network_traffic_units_title">トラフィックの単位</string>
     <string name="network_traffic_units_kilobits">キロビット/秒 (kb/s)</string>
     <string name="network_traffic_units_megabits">メガビット/秒 (Mb/s)</string>

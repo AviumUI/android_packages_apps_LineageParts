@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2025 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -399,6 +399,8 @@
     <string name="network_traffic_position_title">מיקום</string>
     <string name="network_traffic_autohide">הסתרה אוטומטית</string>
     <string name="network_traffic_autohide_summary">מנטר תעבורת הרשת יוסתר כאשר אין פעילות</string>
+    <string name="network_traffic_hide_arrows">הסתרת חיצים</string>
+    <string name="network_traffic_hide_arrows_summary">הסתרת חיצי כיוון העלאה והורדה</string>
     <string name="network_traffic_units_title">יחידות מידה לתעבורה</string>
     <string name="network_traffic_units_kilobits">קילוביט לשנייה (kb/s)</string>
     <string name="network_traffic_units_megabits">מגהביט לשנייה (Mb/s)</string>
