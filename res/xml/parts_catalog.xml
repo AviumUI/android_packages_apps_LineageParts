@@ -80,4 +80,9 @@
           android:summary="@string/touchscreen_gesture_settings_summary"
           android:fragment="org.lineageos.lineageparts.gestures.TouchscreenGestureSettings"
           lineage:xmlRes="@xml/touchscreen_gesture_settings" />
+
+    <part android:key="live_display_color_profile"
+          android:title="@string/live_display_color_profile_title"
+          android:fragment="org.lineageos.lineageparts.livedisplay.ColorProfileFragment"
+          lineage:xmlRes="@xml/color_profile_settings" />
 </parts-catalog>

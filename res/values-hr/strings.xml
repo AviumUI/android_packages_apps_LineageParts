@@ -85,7 +85,6 @@
     <string name="live_display_low_power_summary">Prilagodite prikaz za najnižu potrošnju energije bez degradacije</string>
     <string name="live_display_enhance_color_title">Poboljšanje boje</string>
     <string name="live_display_enhance_color_summary">Poboljšaj treperenje boja svijetlih tonova, scena ili ostalih slika</string>
-    <string name="live_display_color_profile_title">Boja profila</string>
     <string name="live_display_color_profile_standard_title">Standardno</string>
     <string name="live_display_color_profile_standard_summary">Točne boje i svjetla bijela</string>
     <string name="live_display_color_profile_natural_title">Prirodno</string>
@@ -367,11 +366,13 @@
     <string name="contributors_cloud_loading_message">Učitavanje podataka suradnika\u2026</string>
     <string name="contributors_cloud_failed_message">Nije moguće učitati podatke suradnika</string>
     <string name="contributor_info_menu">Informacije suradnika</string>
-    <string name="contributor_info_msg"><![CDATA[<b>Ime:</b><xliff:g id="name">%1$s</xliff:g>
+    <string name="contributor_info_msg"><![CDATA[
+<b>Ime:</b><xliff:g id="name">%1$s</xliff:g>
                  <b>Nadimak:</b><xliff:g id="nick">%2$s</xliff:g><br/>
                  <b>Obvezuje:</b><xliff:g id="commits">%3$s</xliff:g>]]></string>
     <string name="contributions_info_menu">Informacije suradnika</string>
-    <string name="contributions_info_msg"><![CDATA[<b>Svi suradnici:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
+    <string name="contributions_info_msg"><![CDATA[
+<b>Svi suradnici:</b> <xliff:g id="total_contributors">%1$s</xliff:g><br/><br/>
                  <b>Ukupno obveza</b><xliff:g id="total_commits">%2$s</xliff:g><br/><br/>
                  <b>Zadnje ažuriranje</b><xliff:g id="date">%3$s</xliff:g>]]></string>
     <string name="anonymous_statistics_title">AviumUI statistika</string>

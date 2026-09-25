@@ -94,7 +94,7 @@
     <string name="live_display_low_power_summary">Aðlaga skjá fyrir minnstu orkunotkun án skerðingar afkasta</string>
     <string name="live_display_enhance_color_title">Bæta liti</string>
     <string name="live_display_enhance_color_summary">Bæta skærleika lita í húðtónum, landslagi og öðrum myndum</string>
-    <string name="live_display_color_profile_title">Litasnið</string>
+    <string name="live_display_color_profile_preview">Forskoðun litar</string>
     <string name="live_display_color_profile_standard_title">Staðlað</string>
     <string name="live_display_color_profile_standard_summary">Nákvæmir litir og bjartir hvítir</string>
     <string name="live_display_color_profile_natural_title">Náttúra</string>
@@ -498,7 +498,7 @@
     <string name="trust_notification_alerts_title">Öryggisaðvaranir</string>
     <string name="trust_warnings_alerts_intro">Þú getur valið hvaða öryggisvandamál þú vilt fá aðvaranir um. Öryggis þíns vegna er mælt með að þú virkir allar aðvaranirnar</string>
     <string name="trust_warnings_selinux">Staða SELinux</string>
-    <string name="trust_warnings_keys">Undirritun kerfisbyggingar</string>
+    <string name="trust_warnings_keys">Undirritun samsetningar</string>
     <string name="trust_onboarding_title">Heilsaðu upp á Traust</string>
     <string name="trust_onboarding_description">Traust hjálpar þér við að halda tækinu þínu öruggu og við að vernda persónulegar upplýsingar þínar.\nTáknmynd Trausts birtist einungis þegar efni síðunnar hefur verið sannreynt.</string>
     <string name="trust_onboarding_learn_more">Kanna nánar</string>

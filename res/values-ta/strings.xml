@@ -104,7 +104,6 @@
     <string name="live_display_low_power_summary">தரம் குறையாமல் குறைந்த மின் நுகர்வுக்காகத் திரையைச் சீரமைக்க</string>
     <string name="live_display_enhance_color_title">நிறங்களை மேம்படுத்துக</string>
     <string name="live_display_enhance_color_summary">தோல் நிறங்கள், காட்சிகள், பிற படங்கள் ஆகியவற்றின் வண்ண அதிர்வை மேம்படுத்துக</string>
-    <string name="live_display_color_profile_title">நிறத் தனியமைப்பு</string>
     <string name="live_display_color_profile_standard_title">இயல்பு</string>
     <string name="live_display_color_profile_standard_summary">துல்லியமான நிறங்களும் ஒளிமிக்க வெண்மையும்</string>
     <string name="live_display_color_profile_natural_title">இயற்கை</string>
@@ -145,7 +144,8 @@
     <string name="hardware_keys_action_launch_camera">படமியைத் தொடங்குதல்</string>
     <string name="hardware_keys_action_sleep">திரையை அணைத்தல்</string>
     <string name="hardware_keys_action_last_app">இறுதிச் செயலி</string>
-    <string name="hardware_keys_action_split_screen">பிரிதிரை</string>
+    <string name="hardware_keys_action_split_screen">
+பிரிதிரை</string>
     <string name="hardware_keys_action_kill_app">முன்புற செயலியை அழித்தல்</string>
     <string name="camera_sleep_on_release_title">திரைப் பார்வை</string>
     <string name="camera_sleep_on_release_summary">பொத்தானை அழுத்திப் பிடித்திருக்கும்போது மட்டும் பாதி அழுத்தினால் திரை இயக்கத்தில் இருக்கும்</string>
